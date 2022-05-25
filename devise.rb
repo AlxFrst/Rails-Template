@@ -83,7 +83,7 @@ end
 # README
 ########################################
 markdown_file_content = <<-MARKDOWN
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+Rails app generated with [AlxFrst/rails-templates]
 MARKDOWN
 file "README.md", markdown_file_content, force: true
 
@@ -132,8 +132,8 @@ after_bundle do
   ########################################
   run "rm app/controllers/application_controller.rb"
   file "app/controllers/application_controller.rb", <<~RUBY
-              class ApplicationController < ActionController::Base
-              #{"protect_from_forgery with: :exception\n" if Rails.version < "5.2"}  before_action :authenticate_user!
+                             class ApplicationController < ActionController::Base
+                             #{"protect_from_forgery with: :exception\n" if Rails.version < "5.2"}  before_action :authenticate_user!
     end
        RUBY
 
